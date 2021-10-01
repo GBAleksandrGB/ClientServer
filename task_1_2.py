@@ -16,3 +16,5 @@ print(response.status_code)
 with open('result.pdf', 'wb') as f:
     for ch in response.iter_content(chunk_size=1024):
         f.write(ch)
+
+# понравилась идея, хотя по заданию нужно было, наоборот json получить, а не отправлять.
