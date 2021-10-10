@@ -16,7 +16,7 @@ def my_base(vacancies):
             db.collection.insert_one(el)
 
     vacancy_filter = db.collection.find({'размер оплаты MIN': {'$gte': int(input('Ввведите размер оплаты MIN: '))},
-                                         'валюта': input('Ввведите размер оплаты MIN: ')},
+                                         'валюта': input('Ввведите валюту (руб. или USD): ')},
                                         {'название вакансии': 1, 'организация': 1, 'размер оплаты MIN': 1,
                                          'ссылка на вакансию': 1, 'валюта': 1, '_id': 0})
 
