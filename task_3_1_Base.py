@@ -5,16 +5,6 @@ import re
 from pymongo import MongoClient
 
 
-def find_in_base(collection):
-    vacancy_filter = collection.find({'размер оплаты MIN': {'$gte': int(input('Ввведите размер оплаты MIN: '))},
-                                         'валюта': input('Ввведите валюту (руб. или USD): ')},
-                                        {'название вакансии': 1, 'организация': 1, 'размер оплаты MIN': 1,
-                                         'ссылка на вакансию': 1, 'валюта': 1, '_id': 0})
-
-    df = pandas.DataFrame(vacancy_filter)
-    return df
-
-
 def my_base(vacancies):
     """Вносим вакансии в базу, если в коллекции вакансии отсутствуют, и запускаем поиск по размеру оплаты"""
 
@@ -24,7 +14,13 @@ def my_base(vacancies):
     for el in vacancies:
         if not collection.find(el):
             collection.insert_one(el)
-    return collection
+
+    vacancy_filter = collection.find({'размер оплаты MIN': {'$gte': int(input('Ввведите размер оплаты MIN: '))},
+                                      'валюта': input('Ввведите валюту (руб., USD или EUR): ')},
+                                     {'название вакансии': 1, 'организация': 1, 'размер оплаты MIN': 1,
+                                      'ссылка на вакансию': 1, 'валюта': 1, '_id': 0})
+    df = pandas.DataFrame(vacancy_filter)
+    print(df)
 
 
 def get_page(page):
@@ -127,8 +123,7 @@ def parse():
 
     print(f'Распарсено {num_pages} страниц, получено {len(vacancies)} вакансий.')
 
-    df = find_in_base(my_base(vacancies))
-    print(df)
+    my_base(vacancies)
 
 
 if __name__ == '__main__':
