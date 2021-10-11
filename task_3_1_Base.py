@@ -118,7 +118,6 @@ def parse():
 
         get_vacancies(soup, vacancies)
         num_pages += 1
-
         page = get_next_page_number(soup, num_pages)
 
     print(f'Распарсено {num_pages} страниц, получено {len(vacancies)} вакансий.')
