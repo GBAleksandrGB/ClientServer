@@ -11,16 +11,20 @@ def my_base(vacancies):
     client = MongoClient('localhost', 27017)
     db = client['vacancies']
     collection = db.python_vacancies
+    counter = 0
     for el in vacancies:
-        if not collection.find(el):
+        if collection.find(el) == 0:
             collection.insert_one(el)
+            counter += 1
+    print(f'Добавлено в базу {counter} новых вакансий.')
 
-    vacancy_filter = collection.find({'размер оплаты MIN': {'$gte': int(input('Ввведите размер оплаты MIN: '))},
-                                      'валюта': input('Ввведите валюту (руб., USD или EUR): ')},
+    vacancy_filter = collection.find({'размер оплаты MIN': {'$gte': int(input('Введите размер оплаты MIN: '))},
+                                      'валюта': input('Введите валюту (руб., USD или EUR): ')},
                                      {'название вакансии': 1, 'организация': 1, 'размер оплаты MIN': 1,
                                       'ссылка на вакансию': 1, 'валюта': 1, '_id': 0})
+
     df = pandas.DataFrame(vacancy_filter)
-    print(df)
+    return df
 
 
 def get_page(page):
@@ -122,7 +126,7 @@ def parse():
 
     print(f'Распарсено {num_pages} страниц, получено {len(vacancies)} вакансий.')
 
-    my_base(vacancies)
+    print(my_base(vacancies))
 
 
 if __name__ == '__main__':
