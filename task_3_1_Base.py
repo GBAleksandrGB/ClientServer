@@ -5,23 +5,26 @@ import re
 from pymongo import MongoClient
 
 
-def my_base(vacancies):
-    """Вносим вакансии в базу, если в коллекции вакансии отсутствуют, и запускаем поиск по размеру оплаты"""
-
-    client = MongoClient('localhost', 27017)
-    db = client['vacancies']
-    db.collection = db.python_vacancies
-    for el in vacancies:
-        if not db.collection.find(el):
-            db.collection.insert_one(el)
-
-    vacancy_filter = db.collection.find({'размер оплаты MIN': {'$gte': int(input('Ввведите размер оплаты MIN: '))},
+def find_in_base(collection):
+    vacancy_filter = collection.find({'размер оплаты MIN': {'$gte': int(input('Ввведите размер оплаты MIN: '))},
                                          'валюта': input('Ввведите валюту (руб. или USD): ')},
                                         {'название вакансии': 1, 'организация': 1, 'размер оплаты MIN': 1,
                                          'ссылка на вакансию': 1, 'валюта': 1, '_id': 0})
 
     df = pandas.DataFrame(vacancy_filter)
-    print(df)
+    return df
+
+
+def my_base(vacancies):
+    """Вносим вакансии в базу, если в коллекции вакансии отсутствуют, и запускаем поиск по размеру оплаты"""
+
+    client = MongoClient('localhost', 27017)
+    db = client['vacancies']
+    collection = db.python_vacancies
+    for el in vacancies:
+        if not collection.find(el):
+            collection.insert_one(el)
+    return collection
 
 
 def get_page(page):
@@ -71,7 +74,7 @@ def get_vacancies(soup, vacancies):
                 compensation_str = ', '.join(compensation.contents).replace('\u202f', '')
                 pattern = re.compile(r'\d+')
                 compensation_list = re.findall(pattern, compensation_str)
-                pattern_currency = re.compile(r'руб\.|USD')
+                pattern_currency = re.compile(r'руб\.|USD|EUR')
                 currency = re.search(pattern_currency, compensation_str).group()
                 if len(compensation_list) == 2:
                     min_compensation = int(compensation_list[0])
@@ -124,7 +127,8 @@ def parse():
 
     print(f'Распарсено {num_pages} страниц, получено {len(vacancies)} вакансий.')
 
-    my_base(vacancies)
+    df = find_in_base(my_base(vacancies))
+    print(df)
 
 
 if __name__ == '__main__':
