@@ -11,12 +11,12 @@ def my_base(vacancies):
     client = MongoClient('localhost', 27017)
     db = client['vacancies']
     collection = db.python_vacancies
-    counter = 0
+    count = 0
     for el in vacancies:
-        if collection.find(el) == 0:
+        if el not in list(collection.find({}, {'_id': 0})):
             collection.insert_one(el)
-            counter += 1
-    print(f'Добавлено в базу {counter} новых вакансий.')
+            count += 1
+    print(f'Добавлено в базу {count} новых вакансий.')
 
     vacancy_filter = collection.find({'размер оплаты MIN': {'$gte': int(input('Введите размер оплаты MIN: '))},
                                       'валюта': input('Введите валюту (руб., USD или EUR): ')},
