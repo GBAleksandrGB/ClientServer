@@ -1,0 +1,817 @@
+2021-10-22 12:46:05 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: scrapybot)
+2021-10-22 12:46:05 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 35.0.0, Platform Windows-10-10.0.19043-SP0
+2021-10-22 12:46:05 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-10-22 12:46:05 [scrapy.crawler] INFO: Overridden settings:
+{'CONCURRENT_REQUESTS_PER_IP': 8,
+ 'DOWNLOAD_DELAY': 3,
+ 'LOG_FILE': 'log.txt',
+ 'NEWSPIDER_MODULE': 'leroyparser.spiders',
+ 'SPIDER_MODULES': ['leroyparser.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0'}
+2021-10-22 12:46:05 [scrapy.extensions.telnet] INFO: Telnet Password: d412d31147fc272c
+2021-10-22 12:46:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-10-22 12:46:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-10-22 12:46:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-10-22 12:46:05 [scrapy.middleware] INFO: Enabled item pipelines:
+['leroyparser.pipeline.LeroyPhotosPipeline',
+ 'leroyparser.pipeline.DataBasePipeline']
+2021-10-22 12:46:05 [scrapy.core.engine] INFO: Spider opened
+2021-10-22 12:46:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-10-22 12:46:05 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-10-22 12:46:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/> (referer: None)
+2021-10-22 12:46:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-zolotaya-180-sm-14837733/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:10 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14837733.jpg> referred in <None>
+2021-10-22 12:46:10 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14837733_01.jpg> referred in <None>
+2021-10-22 12:46:10 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14837733_02.jpg> referred in <None>
+2021-10-22 12:46:10 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14837733_03.jpg> referred in <None>
+2021-10-22 12:46:10 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14837733_04.jpg> referred in <None>
+2021-10-22 12:46:10 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14837733_05.jpg> referred in <None>
+2021-10-22 12:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-zolotaya-180-sm-14837733/>
+{'_id': ObjectId('617288622e005109a1f138de'),
+ 'name': 'Ель новогодняя искусственная «Золотая» 180 см',
+ 'photos': [{'checksum': '506acd1042b9e5ad82ab2bb40fdcde8f',
+             'path': 'full/e73dac1f121d249ded312f1c1738d19b1e12e37a.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14837733.jpg'},
+            {'checksum': 'c27dafa86c47d67c8fd5facf45e223c7',
+             'path': 'full/3d7b91f507b2562454f2baf751b4834681435848.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14837733_01.jpg'},
+            {'checksum': '16f33c370d614c2a72548bf3595bf213',
+             'path': 'full/2d522142b81fdf033d104b6d10cf1af3a0b075bf.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14837733_02.jpg'},
+            {'checksum': '8be54f4b20412703b81f093be4666c6b',
+             'path': 'full/a64136e535ebfa467b6934072bfc70062a4c4752.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14837733_03.jpg'},
+            {'checksum': '5028e7da12a27d82ada450a72d6d19e1',
+             'path': 'full/6508ace0bbff064da867ce4f5add6b6fa779531f.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14837733_04.jpg'},
+            {'checksum': 'b3da31c26c0410318afd6a068838f55b',
+             'path': 'full/e62d295f01e237fbb0ac47621a991f5a205a8316.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14837733_05.jpg'}],
+ 'price': 5490}
+2021-10-22 12:46:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/iskusstvennaya-el-car-elka-sapfir-215-sm-93725027/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:13 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/93725027.jpg> referred in <None>
+2021-10-22 12:46:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/iskusstvennaya-el-car-elka-sapfir-215-sm-93725027/>
+{'_id': ObjectId('617288652e005109a1f138df'),
+ 'name': 'Искусственная ель Царь Елка Сапфир 215  см',
+ 'photos': [{'checksum': '4a989c4d69303c02cabd84879b2f528b',
+             'path': 'full/1d5834444e541f9b1cd9e64c6b48073485947dea.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/93725027.jpg'}],
+ 'price': 35600}
+2021-10-22 12:46:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/iskusstvennaya-elka-s-ukrasheniyami-zasnezhennaya-20-sm-82197704/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:17 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82197704.jpg> referred in <None>
+2021-10-22 12:46:17 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82197704_01.jpg> referred in <None>
+2021-10-22 12:46:17 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82197704_02.jpg> referred in <None>
+2021-10-22 12:46:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/iskusstvennaya-elka-s-ukrasheniyami-zasnezhennaya-20-sm-82197704/>
+{'_id': ObjectId('617288692e005109a1f138e0'),
+ 'name': 'Искусственная елка с украшениями заснеженная 20 см',
+ 'photos': [{'checksum': 'b2908191897e450efce57c1cf459e16d',
+             'path': 'full/611821aac93d3a346df67a87236b69843b6df55b.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82197704.jpg'},
+            {'checksum': '631ddc3b18c56a065068d871f67585cf',
+             'path': 'full/83831a499538d39ccfaf4d19b7a28f99f3dd4d84.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82197704_01.jpg'},
+            {'checksum': 'a1997ee23ac72bdbd5d2c327531a0229',
+             'path': 'full/2b96ecdae10b3da3d8412635acce6511d1615a75.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82197704_02.jpg'}],
+ 'price': 350}
+2021-10-22 12:46:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-lunnyy-svet-240-sm-14042332/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:21 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042332.jpg> referred in <None>
+2021-10-22 12:46:21 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042332_01.jpg> referred in <None>
+2021-10-22 12:46:21 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042332_02.jpg> referred in <None>
+2021-10-22 12:46:21 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042332_03.jpg> referred in <None>
+2021-10-22 12:46:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-lunnyy-svet-240-sm-14042332/>
+{'_id': ObjectId('6172886d2e005109a1f138e1'),
+ 'name': 'Ель новогодняя искусственная «Лунный свет» 240 см',
+ 'photos': [{'checksum': '151db8222f991779f8c23722eb6d016e',
+             'path': 'full/b519ca0442242a54a6d854d65907376a96ce186a.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042332.jpg'},
+            {'checksum': 'b1cc92cb6d2a8b5e745f09a0e5038621',
+             'path': 'full/a560aa347f2e07ca2c654eaf70db23051a44e2da.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042332_01.jpg'},
+            {'checksum': '33f2437b7809c2e801e619f36960fc0d',
+             'path': 'full/29080f95cb9571bcb113059a3b4769dd77f9fb5c.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042332_02.jpg'},
+            {'checksum': '70eb7a09205c7414e0cf617d5df8eba3',
+             'path': 'full/0780bb33b61e9a777bcc4bfcf5e31914bc890fbe.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042332_03.jpg'}],
+ 'price': 9490}
+2021-10-22 12:46:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/iskusstvennaya-elka-grintriz-valerio-premium-h150-sm-82710147/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:24 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82710147_std.jpg> referred in <None>
+2021-10-22 12:46:24 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82710147_std_01.jpg> referred in <None>
+2021-10-22 12:46:24 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82710147_std_02.jpg> referred in <None>
+2021-10-22 12:46:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/iskusstvennaya-elka-grintriz-valerio-premium-h150-sm-82710147/>
+{'_id': ObjectId('617288702e005109a1f138e2'),
+ 'name': 'Искусственная елка Гринтриз Валерио Премиум h150 см',
+ 'photos': [{'checksum': '7b3fce222bab1981cd5727770531d06b',
+             'path': 'full/6a005fa31acca1f4c253c08f9465dd2995b01f3f.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82710147_std.jpg'},
+            {'checksum': '6678b2040ffd48b0cb409da6655f7370',
+             'path': 'full/94ba04697c0761eff875d3874ea73e0232d3a77c.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82710147_std_01.jpg'},
+            {'checksum': 'acc5302bf4bb823510ea8f03060f282b',
+             'path': 'full/35c828ba305e125520d1af7b33b749157c526c1e.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82710147_std_02.jpg'}],
+ 'price': 8990}
+2021-10-22 12:46:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/iskusstvennaya-elka-grintriz-valerio-premium-h180-sm-83647713/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:27 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/83647713_std.jpg> referred in <None>
+2021-10-22 12:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/iskusstvennaya-elka-grintriz-valerio-premium-h180-sm-83647713/>
+{'_id': ObjectId('617288732e005109a1f138e3'),
+ 'name': 'Искусственная елка Гринтриз "Валерио" Премиум h180 см',
+ 'photos': [{'checksum': 'df94236b0c5a1be152586e4c230f2e16',
+             'path': 'full/56bb2e86a45a9bab98b0538b9f92711002620cae.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/83647713_std.jpg'}],
+ 'price': 12990}
+2021-10-22 12:46:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/iskusstvennaya-elka-grintriz-valerio-premium-h210-sm-83647714/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/83647714_std.jpg> referred in <None>
+2021-10-22 12:46:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/83647714_std_01.jpg> referred in <None>
+2021-10-22 12:46:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/83647714_std_02.jpg> referred in <None>
+2021-10-22 12:46:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/83647714_std_03.jpg> referred in <None>
+2021-10-22 12:46:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/iskusstvennaya-elka-grintriz-valerio-premium-h210-sm-83647714/>
+{'_id': ObjectId('617288772e005109a1f138e4'),
+ 'name': 'Искусственная елка Гринтриз "Валерио" Премиум h210 см',
+ 'photos': [{'checksum': '473493dffb62747a83be829eee641f8b',
+             'path': 'full/ac18c4289d8844a265d8b956d9c56c6a5219a586.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/83647714_std.jpg'},
+            {'checksum': '6bd7e2132970f476c89d7339be6c4254',
+             'path': 'full/5dbff41d08bfd0e4888ab3de8a5c27c99bb6c5b0.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/83647714_std_01.jpg'},
+            {'checksum': 'acc5302bf4bb823510ea8f03060f282b',
+             'path': 'full/d69e1e635b6e21772d7d4061033c8b890cc7070a.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/83647714_std_02.jpg'},
+            {'checksum': '1d306a584048282668f70ffb9b6f3de8',
+             'path': 'full/7c5ca20fe2a1ef66b1026fddf98892cd7f498211.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/83647714_std_03.jpg'}],
+ 'price': 19990}
+2021-10-22 12:46:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/iskusstvennaya-elka-grintriz-valerio-premium-h240-sm-83647715/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:33 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/83647715_std.jpg> referred in <None>
+2021-10-22 12:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/iskusstvennaya-elka-grintriz-valerio-premium-h240-sm-83647715/>
+{'_id': ObjectId('617288792e005109a1f138e5'),
+ 'name': 'Искусственная елка Гринтриз "Валерио" Премиум h240 см',
+ 'photos': [{'checksum': '74d5fe30df4df76f7daa30f6adcf483e',
+             'path': 'full/de5076d0b36e4cd03369a5c094f01c38c32bb5d2.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/83647715_std.jpg'}],
+ 'price': 22990}
+2021-10-22 12:46:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/elka-iskusstvennaya-pagoda-h48-sm-serebryanaya-85136118/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:39 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136118.jpg> referred in <None>
+2021-10-22 12:46:39 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136118_01.jpg> referred in <None>
+2021-10-22 12:46:39 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136118_02.jpg> referred in <None>
+2021-10-22 12:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/elka-iskusstvennaya-pagoda-h48-sm-serebryanaya-85136118/>
+{'_id': ObjectId('6172887f2e005109a1f138e6'),
+ 'name': 'Елка искусственная Пагода h48 см серебряная',
+ 'photos': [{'checksum': '58e492656e62ad0439ca674bd7bcff11',
+             'path': 'full/7416af4a881bdde4910b4d496a298183c235b39a.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136118.jpg'},
+            {'checksum': '2fc1c1d59ee573afb18957321d9b5ed5',
+             'path': 'full/b428c68bcbf0e2131c0546ce1914ca90139837a3.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136118_01.jpg'},
+            {'checksum': '0bd09420fe33fd4fd4c3624bdb296a5d',
+             'path': 'full/a179446f05c7d57caa6e7916032948352d8936f3.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136118_02.jpg'}],
+ 'price': 290}
+2021-10-22 12:46:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/elka-iskusstvennaya-pagoda-h48-sm-zelenaya-85136119/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136119.jpg> referred in <None>
+2021-10-22 12:46:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136119_01.jpg> referred in <None>
+2021-10-22 12:46:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136119_02.jpg> referred in <None>
+2021-10-22 12:46:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/elka-iskusstvennaya-pagoda-h48-sm-zelenaya-85136119/>
+{'_id': ObjectId('617288802e005109a1f138e7'),
+ 'name': 'Елка искусственная Пагода h48 см зеленая',
+ 'photos': [{'checksum': '2401483b67a5d42bd9bdeade087642b0',
+             'path': 'full/e1068849c703c6f624e9121b3fcabbf73cc5f845.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136119.jpg'},
+            {'checksum': '13abd3849f3eb57a6acbf769848a344f',
+             'path': 'full/c29686e1c0277b077677cfa8cbb5252e6614cc22.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136119_01.jpg'},
+            {'checksum': '966f3e7b858321b91e83713b2e2469f7',
+             'path': 'full/66aa53a32f73c43089e5fbf40de05845abaa3042.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136119_02.jpg'}],
+ 'price': 390}
+2021-10-22 12:46:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/elka-iskusstvennaya-pagoda-h48-sm-shampan-85136120/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:44 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136120.jpg> referred in <None>
+2021-10-22 12:46:44 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136120_01.jpg> referred in <None>
+2021-10-22 12:46:44 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136120_02.jpg> referred in <None>
+2021-10-22 12:46:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/elka-iskusstvennaya-pagoda-h48-sm-shampan-85136120/>
+{'_id': ObjectId('617288842e005109a1f138e8'),
+ 'name': 'Елка искусственная Пагода h48 см шампань',
+ 'photos': [{'checksum': 'a93bef00324facfbb73f62873a5d1599',
+             'path': 'full/3fd2c10cbc9180825d4855a490940994cd9fd902.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136120.jpg'},
+            {'checksum': '6f34264488b4c463ea07af77b14ecfed',
+             'path': 'full/39f48dd62944fe29add216af607c3d16dddb5868.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136120_01.jpg'},
+            {'checksum': '13d3f3e93479f7f24b835054954ec2a3',
+             'path': 'full/83f78baed9184a3b7c433785b73ea6ee3259f20e.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136120_02.jpg'}],
+ 'price': 390}
+2021-10-22 12:46:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/elka-iskusstvennaya-s-yagodami-h42-sm-85136116/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:50 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136116.jpg> referred in <None>
+2021-10-22 12:46:50 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136116_01.jpg> referred in <None>
+2021-10-22 12:46:50 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136116_02.jpg> referred in <None>
+2021-10-22 12:46:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/elka-iskusstvennaya-s-yagodami-h42-sm-85136116/>
+{'_id': ObjectId('6172888a2e005109a1f138e9'),
+ 'name': 'Елка искусственная с ягодами h42 см',
+ 'photos': [{'checksum': 'b4d5e8bb109ddf61d4a9cefea912eb09',
+             'path': 'full/27cf50ec049604be7cb783718d29f305c22f1fdc.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136116.jpg'},
+            {'checksum': 'f99decdb97a614da0735b85713295f07',
+             'path': 'full/3bcd07cda917f5f67c19febf2f90956a81a2f56d.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136116_01.jpg'},
+            {'checksum': 'a24103a2c1183f88122e010d846c60eb',
+             'path': 'full/0c40c0e59a710b219e7151b72a2050a9abea52e5.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/85136116_02.jpg'}],
+ 'price': 390}
+2021-10-22 12:46:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-norvezhskaya-210-sm-13592172/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:52 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13592172.jpg> referred in <None>
+2021-10-22 12:46:52 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13592172_01.jpg> referred in <None>
+2021-10-22 12:46:52 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13592172_02.jpg> referred in <None>
+2021-10-22 12:46:52 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13592172_03.jpg> referred in <None>
+2021-10-22 12:46:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-norvezhskaya-210-sm-13592172/>
+{'_id': ObjectId('6172888c2e005109a1f138ea'),
+ 'name': 'Ель новогодняя искусственная «Норвежская» 210 см',
+ 'photos': [{'checksum': '59ff85fd7331485365714e44624742ff',
+             'path': 'full/e4f54a8a19766616187a5d503f68e6671e47fc53.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13592172.jpg'},
+            {'checksum': 'a92132f1173aa272de59d720a7d56f45',
+             'path': 'full/a3d98fd054f8a408672e3ed38392bf42feb1d111.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13592172_01.jpg'},
+            {'checksum': '94fd3e80e2051a607eb80e3aed1e6925',
+             'path': 'full/0fe1688dab82da7d2759c4a1b797d92435d6e24a.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13592172_02.jpg'},
+            {'checksum': '8705f1ea93f17fef5b1cbbecb70c60ac',
+             'path': 'full/c49fc4dc40d9172edf2348856fc36361e103d31f.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13592172_03.jpg'}],
+ 'price': 7990}
+2021-10-22 12:46:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-norvezhskaya-180-sm-13591639/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:56 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13591639.jpg> referred in <None>
+2021-10-22 12:46:56 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13591639_01.jpg> referred in <None>
+2021-10-22 12:46:56 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13591639_02.jpg> referred in <None>
+2021-10-22 12:46:56 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13591639_03.jpg> referred in <None>
+2021-10-22 12:46:56 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13591639_04.jpg> referred in <None>
+2021-10-22 12:46:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-norvezhskaya-180-sm-13591639/>
+{'_id': ObjectId('617288902e005109a1f138eb'),
+ 'name': 'Ель новогодняя искусственная «Норвежская» 180 см',
+ 'photos': [{'checksum': 'be8788e8080a235b354848a70f486dd7',
+             'path': 'full/c54526b82e88d9d24a5adbb6457e1f4a4ed27a06.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13591639.jpg'},
+            {'checksum': '4288dae9acd9c50a0c06e9e729619798',
+             'path': 'full/56d9a575365e9f238565e2c061e66b63e4e36824.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13591639_01.jpg'},
+            {'checksum': 'f33d6f0df63a183153fa137d9eeaeed3',
+             'path': 'full/6469b26d6eef9a97a39f3b1a5f8a1d10d1eaa99c.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13591639_02.jpg'},
+            {'checksum': '59fb8c3dd904183c6f43225644ab787d',
+             'path': 'full/c6a899e99a81013006a7687d25505be423db8f07.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13591639_03.jpg'},
+            {'checksum': '3599b6287b268c1755aaa9e7ca3178a6',
+             'path': 'full/67a3e879671737de275a48840a40173fd628595a.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/13591639_04.jpg'}],
+ 'price': 5990}
+2021-10-22 12:46:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-ladoga-180-sm-82368991/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:46:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991.jpg> referred in <None>
+2021-10-22 12:46:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_01.jpg> referred in <None>
+2021-10-22 12:46:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_02.jpg> referred in <None>
+2021-10-22 12:46:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_03.jpg> referred in <None>
+2021-10-22 12:46:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_04.jpg> referred in <None>
+2021-10-22 12:46:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p.jpg> referred in <None>
+2021-10-22 12:46:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p_01.jpg> referred in <None>
+2021-10-22 12:46:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p_02.jpg> referred in <None>
+2021-10-22 12:46:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p_03.jpg> referred in <None>
+2021-10-22 12:46:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p_04.jpg> referred in <None>
+2021-10-22 12:46:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p_05.jpg> referred in <None>
+2021-10-22 12:46:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p_06.jpg> referred in <None>
+2021-10-22 12:46:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-ladoga-180-sm-82368991/>
+{'_id': ObjectId('617288932e005109a1f138ec'),
+ 'name': 'Ель новогодняя искусственная «Ладога» 180 см',
+ 'photos': [{'checksum': 'a95ed2a477e67d8a604473c7d3de9b96',
+             'path': 'full/e526ba60283736af2394a1be2d580aed4c002b0a.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991.jpg'},
+            {'checksum': 'e8955eb66634483e01aba2362a385765',
+             'path': 'full/596a236fadff5e322d3df94520c6aada935a4854.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_01.jpg'},
+            {'checksum': 'b26e0da331d2acff27df9b48cd87e744',
+             'path': 'full/5ab89b08ec68efd2b9c8610f5716c16d15fe5212.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_02.jpg'},
+            {'checksum': '2ac1bbbd82b4ff8f0f6b619787c2734b',
+             'path': 'full/c3c65058ff2ee4e5481548d99b5d1130698b1fa2.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_03.jpg'},
+            {'checksum': '9b0b97056fc7956ce108646649128c7f',
+             'path': 'full/85ba5c493d1573e88f2a7570a7fa2daa1aea71f0.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_04.jpg'},
+            {'checksum': 'acd7fff477f2e9dfaac4261462ab7149',
+             'path': 'full/f440ab5ba3b8f5bf8e4d34c4d7140212c8781b7e.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p.jpg'},
+            {'checksum': '5ae5cc1c96544bc8065276c6035e9874',
+             'path': 'full/8002406c2e9db538d436f7847f002dcc5839dd9c.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p_01.jpg'},
+            {'checksum': '20e6855dc65abdcec9c76c80cf43433b',
+             'path': 'full/8313e2a906edf740efdd6cd4f53cff3f60c67525.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p_02.jpg'},
+            {'checksum': 'edee90e9322e000d1ebdcc2ba9f6e3e1',
+             'path': 'full/b8a1634d3ef15fc062d4179121ab4e1445830656.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p_03.jpg'},
+            {'checksum': 'a05dfa0d545e38b26c534100b7f1e9f1',
+             'path': 'full/b803b2d0a2c84bd364338402a76c6eaff5627887.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p_04.jpg'},
+            {'checksum': 'd91a832c15b4824438851a1a76200534',
+             'path': 'full/fe2d890db6ee905d9a553eeca66e60d73980542a.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p_05.jpg'},
+            {'checksum': '7aa2ff6b4065de17db9fb8c043cce188',
+             'path': 'full/3e518398ab110f0066d90880b2bb45d63ea873e4.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368991_i1p_06.jpg'}],
+ 'price': 14990}
+2021-10-22 12:47:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-orion-180-sm-82371932/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:01 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82371932.jpg> referred in <None>
+2021-10-22 12:47:01 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82371932_01.jpg> referred in <None>
+2021-10-22 12:47:01 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82371932_02.jpg> referred in <None>
+2021-10-22 12:47:01 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82371932_03.jpg> referred in <None>
+2021-10-22 12:47:01 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82371932_04.jpg> referred in <None>
+2021-10-22 12:47:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-orion-180-sm-82371932/>
+{'_id': ObjectId('617288962e005109a1f138ed'),
+ 'name': 'Ель новогодняя искусственная Орион 180 см',
+ 'photos': [{'checksum': 'db817e676ce178b82703d009021c2622',
+             'path': 'full/91b333b58620aa9ac295a76e18be321add8fcecf.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82371932.jpg'},
+            {'checksum': '178cf2ce3d9c5a61c4673ff83711e23e',
+             'path': 'full/cabaff83f5bfe956e7135a06dd58ee28022e9719.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82371932_01.jpg'},
+            {'checksum': '7b7dbece491628b197afb14f4b06c7c7',
+             'path': 'full/cb63b5dedaa9fed1a51b57ea99387103818afec5.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82371932_02.jpg'},
+            {'checksum': 'c1e617bc5c4fff1136b8b6df3b2a9a1d',
+             'path': 'full/497341133dc57b5a05b04eee9f34db1581ac946c.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82371932_03.jpg'},
+            {'checksum': '6e61e4eeadca74cde6614ccddff4797e',
+             'path': 'full/eac932d7b2ffeebbf71b24fabd57917cbf4894f2.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82371932_04.jpg'}],
+ 'price': 14990}
+2021-10-22 12:47:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-baykalskaya-100-sm-82368983/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:04 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368983.jpg> referred in <None>
+2021-10-22 12:47:04 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368983_01.jpg> referred in <None>
+2021-10-22 12:47:04 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368983_02.jpg> referred in <None>
+2021-10-22 12:47:04 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368983_03.jpg> referred in <None>
+2021-10-22 12:47:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-baykalskaya-100-sm-82368983/>
+{'_id': ObjectId('617288982e005109a1f138ee'),
+ 'name': 'Ель новогодняя искусственная «Байкальская» 100 см',
+ 'photos': [{'checksum': 'ff086897149bf24625209c10095e720b',
+             'path': 'full/f9462a8b5149f12722410767db65f73dfd31f489.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368983.jpg'},
+            {'checksum': '84bdfb9a6da4f05e204d47918078f73d',
+             'path': 'full/d45573f93a0e8eceb5b7636dffaa8f4050f7ac4a.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368983_01.jpg'},
+            {'checksum': '3084894e5813764a03b0e601d6449b49',
+             'path': 'full/b3d753c139924d8b4b4c23d738f462aa9a34ffdc.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368983_02.jpg'},
+            {'checksum': 'ae6d189f8f9a0dbae417ea37f187a52b',
+             'path': 'full/ada9a6536c28d33d22c0627d5581d65c235bf8c1.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368983_03.jpg'}],
+ 'price': 2490}
+2021-10-22 12:47:05 [scrapy.extensions.logstats] INFO: Crawled 18 pages (at 18 pages/min), scraped 17 items (at 17 items/min)
+2021-10-22 12:47:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/iskusstvennaya-el-crystal-trees-matterhorn-150-sm-90145121/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:07 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/90145121.jpg> referred in <None>
+2021-10-22 12:47:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/iskusstvennaya-el-crystal-trees-matterhorn-150-sm-90145121/>
+{'_id': ObjectId('6172889b2e005109a1f138ef'),
+ 'name': 'Искусственная ель Crystal Trees Маттерхорн 150 см',
+ 'photos': [{'checksum': '9a23467bc21fb8bbba7f3a12a0d9d666',
+             'path': 'full/f64200c0ccab0329eae939e7570df51fa7727474.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/90145121.jpg'}],
+ 'price': 29349}
+2021-10-22 12:47:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/iskusstvennaya-el-crystal-trees-neapol-150-sm-90145125/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:10 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/90145125.jpg> referred in <None>
+2021-10-22 12:47:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/iskusstvennaya-el-crystal-trees-neapol-150-sm-90145125/>
+{'_id': ObjectId('6172889f2e005109a1f138f0'),
+ 'name': 'Искусственная ель Crystal Trees Неаполь 150 см',
+ 'photos': [{'checksum': 'd33ca0156b52da832bdc34da1de23e9d',
+             'path': 'full/aa33b53c737b22c42349ad1413e3126537320824.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/90145125.jpg'}],
+ 'price': 31299}
+2021-10-22 12:47:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-penelopa-180-sm-82603749/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:15 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603749.jpg> referred in <None>
+2021-10-22 12:47:15 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603749_01.jpg> referred in <None>
+2021-10-22 12:47:15 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603749_02.jpg> referred in <None>
+2021-10-22 12:47:15 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603749_03.jpg> referred in <None>
+2021-10-22 12:47:15 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603749_04.jpg> referred in <None>
+2021-10-22 12:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-penelopa-180-sm-82603749/>
+{'_id': ObjectId('617288a32e005109a1f138f1'),
+ 'name': 'Ель новогодняя искусственная «Пенелопа» 180 см',
+ 'photos': [{'checksum': '928ce8cffc6d39179608fc6659bf1479',
+             'path': 'full/003f5f64cc3a7d2d22740cbd9be1e3de9ded6830.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603749.jpg'},
+            {'checksum': 'ad6a0c6c0d2d6951a13f29b18ee01be3',
+             'path': 'full/b240ecac178ff0b8a3034ae041d92da028614713.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603749_01.jpg'},
+            {'checksum': 'ed3b5eeac0cf6d0c58b424165dae7f01',
+             'path': 'full/b09287e212508f6ec7cc1c514494ef4c2df05305.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603749_02.jpg'},
+            {'checksum': '45b2ac64726e3b07c98a23a6a79294c7',
+             'path': 'full/5dfea07226a9896af469399e2cef294bea7f65a6.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603749_03.jpg'},
+            {'checksum': 'a4c09a3e77cfe435f7a1a187e1a178c0',
+             'path': 'full/189babefbd72241ff31edcc535bd84abe3faa0c0.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603749_04.jpg'}],
+ 'price': 14990}
+2021-10-22 12:47:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-mario-160-sm-82368978/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978.jpg> referred in <None>
+2021-10-22 12:47:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_01.jpg> referred in <None>
+2021-10-22 12:47:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_02.jpg> referred in <None>
+2021-10-22 12:47:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_03.jpg> referred in <None>
+2021-10-22 12:47:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p.jpg> referred in <None>
+2021-10-22 12:47:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p_01.jpg> referred in <None>
+2021-10-22 12:47:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p_02.jpg> referred in <None>
+2021-10-22 12:47:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p_03.jpg> referred in <None>
+2021-10-22 12:47:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p_04.jpg> referred in <None>
+2021-10-22 12:47:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p_05.jpg> referred in <None>
+2021-10-22 12:47:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p_06.jpg> referred in <None>
+2021-10-22 12:47:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-mario-160-sm-82368978/>
+{'_id': ObjectId('617288a72e005109a1f138f2'),
+ 'name': 'Ель новогодняя искусственная «Марио» 160 см',
+ 'photos': [{'checksum': '448d6a6a226414f14991b3d42485049d',
+             'path': 'full/057b183d8a0268f8f1c3ba5faa48d2793051bd52.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978.jpg'},
+            {'checksum': 'eb90ebd4452ab08084ef6f65bb2016c6',
+             'path': 'full/896f154a321538fe23873f4d3004f3b53c9a7e94.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_01.jpg'},
+            {'checksum': 'b013281e98bfe79ba5a922db23332e8d',
+             'path': 'full/db5cc07c00090559fec7b80916bbfd614719634d.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_02.jpg'},
+            {'checksum': '9b0b97056fc7956ce108646649128c7f',
+             'path': 'full/94589365c9cd68c28078d6de64195658d649b0a2.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_03.jpg'},
+            {'checksum': '8cae10bc090e3d97a84643fbef68aab0',
+             'path': 'full/7267a5f8a9ef843a634f99ada7383ba30d6a9e1f.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p.jpg'},
+            {'checksum': '6d2da68ca4804cb148aae6e674341233',
+             'path': 'full/fc2f8a57ff04f1c1ec0b0c84ffe908e4cf52c55d.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p_01.jpg'},
+            {'checksum': '52294cbc511100de1623ff40c72e54be',
+             'path': 'full/40e93d170ab21d9ecbe8eef66002d0bde46d5a33.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p_02.jpg'},
+            {'checksum': '0cdb86f14f5d5a14f373c08126dd8a6a',
+             'path': 'full/b413ee2e23536a1c4151f065019da2b49c4d0d1b.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p_03.jpg'},
+            {'checksum': '3cada2c521e4933609135271c7a077d4',
+             'path': 'full/c43cceb587a959a7f40b691bb4be0d65bb045558.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p_04.jpg'},
+            {'checksum': '0d96339e06df182477f24d56ec9422be',
+             'path': 'full/cbb7908b7b6f1b4bcec81cbe4677f57175f634ec.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p_05.jpg'},
+            {'checksum': '73d8c84c88b2f55369363b41bfc3e303',
+             'path': 'full/877c5be92917030f9c21cc22fb7033edfff066f4.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368978_i1p_06.jpg'}],
+ 'price': 5990}
+2021-10-22 12:47:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-lyuks-150-sm-82368970/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:22 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970.jpg> referred in <None>
+2021-10-22 12:47:22 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_01.jpg> referred in <None>
+2021-10-22 12:47:22 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_02.jpg> referred in <None>
+2021-10-22 12:47:22 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_03.jpg> referred in <None>
+2021-10-22 12:47:22 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_i1p_01.jpg> referred in <None>
+2021-10-22 12:47:22 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_i1p_02.jpg> referred in <None>
+2021-10-22 12:47:22 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_i1p_03.jpg> referred in <None>
+2021-10-22 12:47:22 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_i1p_04.jpg> referred in <None>
+2021-10-22 12:47:22 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_i1p_05.jpg> referred in <None>
+2021-10-22 12:47:22 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_i1p_06.jpg> referred in <None>
+2021-10-22 12:47:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-lyuks-150-sm-82368970/>
+{'_id': ObjectId('617288aa2e005109a1f138f3'),
+ 'name': 'Ель новогодняя искусственная «Люкс» 150 см',
+ 'photos': [{'checksum': 'e2d47c2c0a3aacc2f5cf361cc1215d50',
+             'path': 'full/71a2014c0a814ac5100321b39c52d014c7246021.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970.jpg'},
+            {'checksum': '6e6d553c2c8f9b7429b8cb7ab86563eb',
+             'path': 'full/2757592847630a750a8526fd69cb544e69dee737.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_01.jpg'},
+            {'checksum': 'd9effd9f47d4e7b726e4cd9b8dfafe1c',
+             'path': 'full/342f4caba90d49f6e62dc7daaa5c56537d8ffc10.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_02.jpg'},
+            {'checksum': '9b0b97056fc7956ce108646649128c7f',
+             'path': 'full/745ab92b4effccd825c6b1d9f6129b312e657b90.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_03.jpg'},
+            {'checksum': 'ac4410ab4db76623222abd34905bd03f',
+             'path': 'full/fba52247e88ba95c0898a4f83ba3e44a8ba298ab.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_i1p_01.jpg'},
+            {'checksum': 'f8119e5e25e638200cc13e4f48793aff',
+             'path': 'full/97286349635120eb89b30b50313dd2989e7b83c2.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_i1p_02.jpg'},
+            {'checksum': 'ce08d6f01b52533db076513326211476',
+             'path': 'full/c48776556ef0f7b8e927eeda49b14d3659649d14.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_i1p_03.jpg'},
+            {'checksum': '38e18e81ec31121b3d0f14efdf8236fc',
+             'path': 'full/a5f41a4583122fe502951c53267605726ccc160b.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_i1p_04.jpg'},
+            {'checksum': 'f89d8e8bc0eaf83d912a010f7f84540d',
+             'path': 'full/230b14f48538da30a8cb4dee0b9036f825b55697.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_i1p_05.jpg'},
+            {'checksum': '7f92485696d464fd4e6653735011c6c0',
+             'path': 'full/01524327a77f348b3305cfe054747ddfe476efeb.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368970_i1p_06.jpg'}],
+ 'price': 3990}
+2021-10-22 12:47:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-s-ukrasheniyami-na-podstavke-20-sm-82197705/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:25 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82197705.jpg> referred in <None>
+2021-10-22 12:47:25 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82197705_01.jpg> referred in <None>
+2021-10-22 12:47:25 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82197705_02.jpg> referred in <None>
+2021-10-22 12:47:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-s-ukrasheniyami-na-podstavke-20-sm-82197705/>
+{'_id': ObjectId('617288ad2e005109a1f138f4'),
+ 'name': 'Ель новогодняя искусственная с украшениями на подставке 20 см',
+ 'photos': [{'checksum': 'ff3dd30bea75a77df1124693291c2326',
+             'path': 'full/dfefe632e303bef7da149c2c05003f03cf25f1b2.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82197705.jpg'},
+            {'checksum': 'd83e538af5e5d30c1a33a4fae22f38a3',
+             'path': 'full/3ef3f9ed24cc63fcd90e9904d73b0414d2510295.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82197705_01.jpg'},
+            {'checksum': 'ba8cd43bb936fe033cffded58861f1e8',
+             'path': 'full/2932c39a3de3a10c74357daf271e2c254852596e.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82197705_02.jpg'}],
+ 'price': 126}
+2021-10-22 12:47:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/sosna-novogodnyaya-iskusstvennaya-koroleva-360-sm-82603753/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:29 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603753.jpg> referred in <None>
+2021-10-22 12:47:29 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603753_01.jpg> referred in <None>
+2021-10-22 12:47:29 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603753_02.jpg> referred in <None>
+2021-10-22 12:47:29 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603753_03.jpg> referred in <None>
+2021-10-22 12:47:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/sosna-novogodnyaya-iskusstvennaya-koroleva-360-sm-82603753/>
+{'_id': ObjectId('617288b12e005109a1f138f5'),
+ 'name': 'Сосна новогодняя искусственная «Королева» 360 см',
+ 'photos': [{'checksum': '8abcd3b10888e506abed19a7aa89d212',
+             'path': 'full/886f7352ba753f664c8fd966860da269f1b1954d.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603753.jpg'},
+            {'checksum': 'f7c33beba429bf6ce1bfb22b3e01a144',
+             'path': 'full/3205767f843e5869b5985942144d032622164597.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603753_01.jpg'},
+            {'checksum': '11c44ef65488dcc2b82eb575595d6c68',
+             'path': 'full/c629dbe2e56eae4d55fa618c05ab6bd1164b81da.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603753_02.jpg'},
+            {'checksum': '34660af01a6dad1c54f2b3d826c426f8',
+             'path': 'full/fbc7f952eea324382b6a15e99c5d958d2535df12.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82603753_03.jpg'}],
+ 'price': 24990}
+2021-10-22 12:47:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-alfa-45-sm-82368976/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:34 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368976.jpg> referred in <None>
+2021-10-22 12:47:34 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368976_01.jpg> referred in <None>
+2021-10-22 12:47:34 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368976_02.jpg> referred in <None>
+2021-10-22 12:47:34 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368976_03.jpg> referred in <None>
+2021-10-22 12:47:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-alfa-45-sm-82368976/>
+{'_id': ObjectId('617288b62e005109a1f138f6'),
+ 'name': 'Ель новогодняя искусственная «Альфа» 45 см',
+ 'photos': [{'checksum': 'd614935af404ee0ea39aede53efc8dcc',
+             'path': 'full/e951730c4cda74e7e06adb4e516d3aa4c1ee6d5d.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368976.jpg'},
+            {'checksum': 'a5b4f46f494dfeaf176bfa48a1c2c14d',
+             'path': 'full/f7c6aafec612c9cf96929d033b9de730cf16f0b1.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368976_01.jpg'},
+            {'checksum': 'c52648bf9bfd8459c1bf7f6707bed356',
+             'path': 'full/9fcc1e959116dc8457159cc65c7d01d6875370a9.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368976_02.jpg'},
+            {'checksum': 'a838d0454217b1d5d4f4319cda615de0',
+             'path': 'full/b3777ebe576917de06359fc8a2264a3bd0b3ddfc.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82368976_03.jpg'}],
+ 'price': 990}
+2021-10-22 12:47:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/iskusstvennaya-elka-v-inee-40-sm-82206070/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:37 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82206070.jpg> referred in <None>
+2021-10-22 12:47:37 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82206070_01.jpg> referred in <None>
+2021-10-22 12:47:37 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82206070_02.jpg> referred in <None>
+2021-10-22 12:47:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/iskusstvennaya-elka-v-inee-40-sm-82206070/>
+{'_id': ObjectId('617288b92e005109a1f138f7'),
+ 'name': 'Искусственная елка в инее 40 см',
+ 'photos': [{'checksum': 'd83f6b5ce3b83a02065d59e43d4db102',
+             'path': 'full/2a1c524f642154d87f59eb5c91271a131b892a2b.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82206070.jpg'},
+            {'checksum': '7a77c071ff2269438e7f5bcbd578da89',
+             'path': 'full/e11490f4ed9a4bdb641ab62c0e15d2e5c421bf26.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82206070_01.jpg'},
+            {'checksum': '9abb719ed2d3bdafae223c7cc2c62550',
+             'path': 'full/7664f7a2048be7ab45b829bb921740bbab3d1a84.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82206070_02.jpg'}],
+ 'price': 690}
+2021-10-22 12:47:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-lunnyy-svet-150-sm-14042308/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042308.jpg> referred in <None>
+2021-10-22 12:47:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042308_01.jpg> referred in <None>
+2021-10-22 12:47:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042308_02.jpg> referred in <None>
+2021-10-22 12:47:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042308_03.jpg> referred in <None>
+2021-10-22 12:47:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-lunnyy-svet-150-sm-14042308/>
+{'_id': ObjectId('617288bc2e005109a1f138f8'),
+ 'name': 'Ель новогодняя искусственная «Лунный свет» 150 см',
+ 'photos': [{'checksum': '4a044fb53be23ea3db5562dc9229aa93',
+             'path': 'full/b10befa9e7d5ca7d81521d08f1ed1785f280d39c.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042308.jpg'},
+            {'checksum': '847789f012939876e3bda3ef4ede8ae8',
+             'path': 'full/e3ee8fe08881d72f0e826e836b3f2fb80d762d43.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042308_01.jpg'},
+            {'checksum': 'ce2a70112d86536cef76ab3bd7b2698f',
+             'path': 'full/4c96c7ee60024d486b328b1d12928b33cbc2ef9b.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042308_02.jpg'},
+            {'checksum': 'c5bc0d3bfa5225afd2687a9c122b2b89',
+             'path': 'full/d83d881b6d86909c9fa08ba27b9293990240378f.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/14042308_03.jpg'}],
+ 'price': 4490}
+2021-10-22 12:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-40-sm-82206073/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:44 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82206073.jpg> referred in <None>
+2021-10-22 12:47:44 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82206073_01.jpg> referred in <None>
+2021-10-22 12:47:44 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82206073_02.jpg> referred in <None>
+2021-10-22 12:47:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-novogodnyaya-iskusstvennaya-40-sm-82206073/>
+{'_id': ObjectId('617288c02e005109a1f138f9'),
+ 'name': 'Ель новогодняя искусственная 40 см',
+ 'photos': [{'checksum': 'a40f47d7a9ea46dba9df0f47031f8aaf',
+             'path': 'full/ad1de37ab0771d3b0c585146269951142f2ed2cd.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82206073.jpg'},
+            {'checksum': '0313e467ebe9e264aed75f5f42ade838',
+             'path': 'full/7671ca275e583cb9775fe18489d4f4809dc044e8.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82206073_01.jpg'},
+            {'checksum': '14da591f7ac63d0f97bbbf317d200851',
+             'path': 'full/3646ca4ec61be0bd56936910547ebda3519a8a5c.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/82206073_02.jpg'}],
+ 'price': 991}
+2021-10-22 12:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-iskusstvennaya-morozco-metelica-100-sm-90151703/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:46 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/90151703.jpg> referred in <None>
+2021-10-22 12:47:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-iskusstvennaya-morozco-metelica-100-sm-90151703/>
+{'_id': ObjectId('617288c22e005109a1f138fa'),
+ 'name': 'Ель искусственная Morozco Метелица 100 см',
+ 'photos': [{'checksum': 'c2c5d7f30c00d6dd79ef1563a0cf9ed2',
+             'path': 'full/bf0883e293c7ac03da75c03df0adf2e7cbf878fe.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/90151703.jpg'}],
+ 'price': 1280}
+2021-10-22 12:47:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://kazan.leroymerlin.ru/product/el-iskusstvennaya-morozco-smayl-120-sm-93848383/> (referer: https://kazan.leroymerlin.ru/catalogue/iskusstvennye-eli/)
+2021-10-22 12:47:49 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/93848383.jpg> referred in <None>
+2021-10-22 12:47:49 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/93848383_01.jpg> referred in <None>
+2021-10-22 12:47:49 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/93848383_02.jpg> referred in <None>
+2021-10-22 12:47:49 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/93848383_03.jpg> referred in <None>
+2021-10-22 12:47:49 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/93848383_04.jpg> referred in <None>
+2021-10-22 12:47:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://kazan.leroymerlin.ru/product/el-iskusstvennaya-morozco-smayl-120-sm-93848383/>
+{'_id': ObjectId('617288c52e005109a1f138fb'),
+ 'name': 'Ель искусственная Morozco Смайл 120 см',
+ 'photos': [{'checksum': 'b5d5de73bd6c01be0fe3057d70be5b74',
+             'path': 'full/06cf8c27d4227aef501ff23406e85b654f8be374.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/93848383.jpg'},
+            {'checksum': 'd478ab7a803cf53fe51b48de815a0e41',
+             'path': 'full/8e27b8cca070de7bc11ec72ccd773700ddc40095.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/93848383_01.jpg'},
+            {'checksum': '848d09323a0134e06a885a23cfbc923c',
+             'path': 'full/a8ea70d1c266bd20aff5a38927064a46897bd30d.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/93848383_02.jpg'},
+            {'checksum': '03a733587f66e87831ef633af658e81f',
+             'path': 'full/ef189ad56e137c584d7871aec475140bdbb83de9.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/93848383_03.jpg'},
+            {'checksum': '53cf54c45db5bc9d79bba0622735854a',
+             'path': 'full/22ea18440310de9564bc25065c69ef0d1a130a94.jpg',
+             'status': 'uptodate',
+             'url': 'https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_2000,h_2000,c_pad,b_white,d_photoiscoming.png/LMCode/93848383_04.jpg'}],
+ 'price': 2560}
+2021-10-22 12:47:49 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-10-22 12:47:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 19962,
+ 'downloader/request_count': 31,
+ 'downloader/request_method_count/GET': 31,
+ 'downloader/response_bytes': 947296,
+ 'downloader/response_count': 31,
+ 'downloader/response_status_count/200': 31,
+ 'elapsed_time_seconds': 103.958017,
+ 'file_count': 120,
+ 'file_status_count/uptodate': 120,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 10, 22, 9, 47, 49, 937762),
+ 'httpcompression/response_bytes': 5390302,
+ 'httpcompression/response_count': 31,
+ 'item_scraped_count': 30,
+ 'log_count/DEBUG': 181,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 1,
+ 'response_received_count': 31,
+ 'scheduler/dequeued': 31,
+ 'scheduler/dequeued/memory': 31,
+ 'scheduler/enqueued': 31,
+ 'scheduler/enqueued/memory': 31,
+ 'start_time': datetime.datetime(2021, 10, 22, 9, 46, 5, 979745)}
+2021-10-22 12:47:49 [scrapy.core.engine] INFO: Spider closed (finished)
