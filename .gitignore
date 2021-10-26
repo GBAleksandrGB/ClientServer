@@ -112,7 +112,9 @@ venv.bak/
 .virt
 virt/
 virt.bak
-
+.scr-env
+scr-env/
+scr-env.bak
 # Spyder project settings
 .spyderproject
 .spyproject
